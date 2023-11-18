@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-      "layer0": "tutorial:item/hyperion"
+      "layer0": "tutorial:item/hypanim"
     }
   }
