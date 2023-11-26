@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tutorial:textures/models/armor/mage_layer_1",
+    "layer1": "tutorial:textures/models/armor/mage_layer_2"
+  }
+}

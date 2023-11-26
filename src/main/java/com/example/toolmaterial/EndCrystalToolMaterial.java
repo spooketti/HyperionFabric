@@ -4,9 +4,9 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class EndCrystalMaterial implements ToolMaterial{
+public class EndCrystalToolMaterial implements ToolMaterial{
 
-    public static final EndCrystalMaterial INSTANCE = new EndCrystalMaterial();
+    public static final EndCrystalToolMaterial INSTANCE = new EndCrystalToolMaterial();
 
     @Override
     public int getDurability()
