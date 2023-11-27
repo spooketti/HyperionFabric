@@ -3,7 +3,7 @@ package com.example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.example.armormaterial.EndCrystalArmorMaterial;
+import com.example.armormaterial.ModArmor;
 import com.example.item.Asclepius;
 import com.example.item.Hyperion;
 import com.example.toolmaterial.EndCrystalToolMaterial;
@@ -29,10 +29,14 @@ public class ModItems {
 
 	public static final ToolItem HYPERION = new Hyperion(EndCrystalToolMaterial.INSTANCE, 5, -2.4F, new FabricItemSettings().rarity(Rarity.EPIC));
 	public static final ToolItem ASCLEPIUS = new Asclepius(ToolMaterials.GOLD, 1, -2.4F, new FabricItemSettings().rarity(Rarity.RARE));
-	public static final ArmorItem MAGEHELMET = new ArmorItem(EndCrystalArmorMaterial.INSTANCE,ArmorItem.Type.HELMET,new FabricItemSettings());
-	public static final ArmorItem MAGECHEST = new ArmorItem(EndCrystalArmorMaterial.INSTANCE,ArmorItem.Type.CHESTPLATE, new FabricItemSettings());
-	public static final ArmorItem MAGELEG = new ArmorItem(EndCrystalArmorMaterial.INSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings());
-	public static final ArmorItem MAGEBOOT = new ArmorItem(EndCrystalArmorMaterial.INSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings());
+	public static final ArmorItem MAGEHELMET = new ArmorItem(ModArmor.MAGEINSTANCE,ArmorItem.Type.HELMET,new FabricItemSettings());
+	public static final ArmorItem MAGECHEST = new ArmorItem(ModArmor.MAGEINSTANCE,ArmorItem.Type.CHESTPLATE, new FabricItemSettings());
+	public static final ArmorItem MAGELEG = new ArmorItem(ModArmor.MAGEINSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings());
+	public static final ArmorItem MAGEBOOT = new ArmorItem(ModArmor.MAGEINSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings());
+	public static final ArmorItem TANKHELMET = new ArmorItem(ModArmor.TANKINSTANCE,ArmorItem.Type.HELMET,new FabricItemSettings());
+	public static final ArmorItem TANKCHEST = new ArmorItem(ModArmor.TANKINSTANCE,ArmorItem.Type.CHESTPLATE, new FabricItemSettings());
+	public static final ArmorItem TANKLEG = new ArmorItem(ModArmor.TANKINSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings());
+	public static final ArmorItem TANKBOOT = new ArmorItem(ModArmor.TANKINSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings());
     public static void registerCreative(RegistryKey<ItemGroup> igroup, Item after, Item item)
 	{
 	ItemGroupEvents.modifyEntriesEvent(igroup).register(content -> {
@@ -49,6 +53,10 @@ public class ModItems {
 		Registry.register(Registries.ITEM, new Identifier("tutorial","mage_chestplate"),MAGECHEST);
 		Registry.register(Registries.ITEM, new Identifier("tutorial","mage_leggings"),MAGELEG);
 		Registry.register(Registries.ITEM, new Identifier("tutorial","mage_boots"),MAGEBOOT);
+		Registry.register(Registries.ITEM, new Identifier("tutorial","tank_helmet"),TANKHELMET);
+		Registry.register(Registries.ITEM, new Identifier("tutorial","tank_chestplate"),TANKCHEST);
+		Registry.register(Registries.ITEM, new Identifier("tutorial","tank_leggings"),TANKLEG);
+		Registry.register(Registries.ITEM, new Identifier("tutorial","tank_boots"),TANKBOOT);
 		registerCreative(ItemGroups.COMBAT, Items.NETHERITE_SWORD, ASCLEPIUS);
 		registerCreative(ItemGroups.COMBAT,Items.NETHERITE_SWORD,HYPERION);
     }

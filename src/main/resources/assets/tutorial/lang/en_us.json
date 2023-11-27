@@ -4,5 +4,9 @@
     "item.tutorial.mage_helmet": "Mage's Helmet",
     "item.tutorial.mage_chestplate": "Mage's Chestplate",
     "item.tutorial.mage_leggings": "Mage's Leggings",
-    "item.tutorial.mage_boots": "Mage's Boots"
+    "item.tutorial.mage_boots": "Mage's Boots",
+    "item.tutorial.tank_helmet": "Tank's Helmet",
+    "item.tutorial.tank_chestplate": "Tank's Chestplate",
+    "item.tutorial.tank_leggings": "Tank's Leggings",
+    "item.tutorial.tank_boots": "Tank's Boots"
 }

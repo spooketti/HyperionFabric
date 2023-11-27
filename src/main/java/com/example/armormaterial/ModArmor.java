@@ -9,8 +9,9 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
-public enum EndCrystalArmorMaterial implements ArmorMaterial{
-	INSTANCE("mage",1,new int[] {3,8,6,3},22,SoundEvents.ENTITY_WITHER_AMBIENT,2f,0.1f, () -> Ingredient.ofItems(Items.OBSIDIAN));
+public enum ModArmor implements ArmorMaterial{
+	MAGEINSTANCE("mage",1,new int[] {3,8,6,3},22,SoundEvents.ENTITY_WITHER_AMBIENT,2f,0.1f, () -> Ingredient.ofItems(Items.OBSIDIAN)),
+	TANKINSTANCE("tank",1,new int[] {3,8,6,3},22,SoundEvents.ENTITY_WITHER_AMBIENT,2f,0.1f, () -> Ingredient.ofItems(Items.OBSIDIAN));
 	private final String name;
 	private final int durabilityMultiplier;
 	private final int[] protectionAmounts;
@@ -22,7 +23,7 @@ public enum EndCrystalArmorMaterial implements ArmorMaterial{
 
     private static final int[] BASE_DURABILITY = {13, 15, 16, 11};
 
-	EndCrystalArmorMaterial(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float kbResistance, Supplier<Ingredient> repairIngredient)
+	ModArmor(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float kbResistance, Supplier<Ingredient> repairIngredient)
 	{
 		this.name = name;
 		this.durabilityMultiplier = durabilityMultiplier;
@@ -52,7 +53,7 @@ public enum EndCrystalArmorMaterial implements ArmorMaterial{
 	@Override
 	public String getName() {
 		// Must be all lowercase
-		return "tutorial:mage";
+		return "tutorial:"+this.name;
 	}
  
 	@Override
