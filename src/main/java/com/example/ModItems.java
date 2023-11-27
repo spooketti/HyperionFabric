@@ -3,6 +3,7 @@ package com.example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.example.armor.FullSet;
 import com.example.armormaterial.ModArmor;
 import com.example.item.Asclepius;
 import com.example.item.Hyperion;
@@ -29,10 +30,10 @@ public class ModItems {
 
 	public static final ToolItem HYPERION = new Hyperion(EndCrystalToolMaterial.INSTANCE, 5, -2.4F, new FabricItemSettings().rarity(Rarity.EPIC));
 	public static final ToolItem ASCLEPIUS = new Asclepius(ToolMaterials.GOLD, 1, -2.4F, new FabricItemSettings().rarity(Rarity.RARE));
-	public static final ArmorItem MAGEHELMET = new ArmorItem(ModArmor.MAGEINSTANCE,ArmorItem.Type.HELMET,new FabricItemSettings());
-	public static final ArmorItem MAGECHEST = new ArmorItem(ModArmor.MAGEINSTANCE,ArmorItem.Type.CHESTPLATE, new FabricItemSettings());
-	public static final ArmorItem MAGELEG = new ArmorItem(ModArmor.MAGEINSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings());
-	public static final ArmorItem MAGEBOOT = new ArmorItem(ModArmor.MAGEINSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings());
+	public static final ArmorItem MAGEHELMET = new FullSet(ModArmor.MAGEINSTANCE,ArmorItem.Type.HELMET,new FabricItemSettings());
+	public static final ArmorItem MAGECHEST = new FullSet(ModArmor.MAGEINSTANCE,ArmorItem.Type.CHESTPLATE, new FabricItemSettings());
+	public static final ArmorItem MAGELEG = new FullSet(ModArmor.MAGEINSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings());
+	public static final ArmorItem MAGEBOOT = new FullSet(ModArmor.MAGEINSTANCE, ArmorItem.Type.BOOTS, new FabricItemSettings());
 	public static final ArmorItem TANKHELMET = new ArmorItem(ModArmor.TANKINSTANCE,ArmorItem.Type.HELMET,new FabricItemSettings());
 	public static final ArmorItem TANKCHEST = new ArmorItem(ModArmor.TANKINSTANCE,ArmorItem.Type.CHESTPLATE, new FabricItemSettings());
 	public static final ArmorItem TANKLEG = new ArmorItem(ModArmor.TANKINSTANCE, ArmorItem.Type.LEGGINGS, new FabricItemSettings());
