@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "spooketti:textures/models/armor/mage_layer_1",
+    "layer1": "spooketti:textures/models/armor/mage_layer_2"
+  }
+}
