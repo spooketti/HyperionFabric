@@ -16,11 +16,11 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.spooketti.ExampleMod"
+			"net.spooketti.Mod"
 		],
 		"client": [
 			"net.spooketti.ExampleModClient",
-			"net.spooketti.event.KeyEventHandler"
+			"net.spooketti.KeyBind"
 		]
 	},
 	"mixins": [

@@ -8,5 +8,7 @@
     "item.spooketti.tank_helmet": "Tank's Helmet",
     "item.spooketti.tank_chestplate": "Tank's Chestplate",
     "item.spooketti.tank_leggings": "Tank's Leggings",
-    "item.spooketti.tank_boots": "Tank's Boots"
+    "item.spooketti.tank_boots": "Tank's Boots",
+    "key.spooketti.ultimate": "Class Ultimate",
+    "key.category.spooketti.spooketticategory": "Spooketti's Category"
 }
